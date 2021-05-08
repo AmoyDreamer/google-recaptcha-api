@@ -1,0 +1,25 @@
+{
+  "name": "google-recaptcha-api",
+  "version": "1.0.0",
+  "description": "A simple library of captcha based on Google reCAPTCHA Server API that supports node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmoyDreamer/google-recaptcha-api.git"
+  },
+  "keywords": [
+    "google-recaptcha"
+  ],
+  "author": "Allen Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmoyDreamer/google-recaptcha-api/issues"
+  },
+  "homepage": "https://github.com/AmoyDreamer/google-recaptcha-api#readme",
+  "dependencies": {
+    "flexible-axios": "^1.0.1"
+  }
+}

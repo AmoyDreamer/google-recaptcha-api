@@ -4,7 +4,7 @@
  * @author Allen Liu
  * @document https://developers.google.com/recaptcha/docs/verify
  */
-const request = require('flexibleAxios')
+const request = require('flexible-axios')
 
 class GoogleReCaptcha {
     //initialize Google reCAPTCHA Server config.
