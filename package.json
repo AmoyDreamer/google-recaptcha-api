@@ -14,8 +14,8 @@
     "captcha",
     "google",
     "reCaptcha",
-    "google reCaptcha",
-    "captcha API"
+    "reCaptcha API",
+    "google reCaptcha"
   ],
   "author": "Allen Liu",
   "license": "MIT",
