@@ -19,10 +19,11 @@ class GoogleReCaptcha {
      */
     async validate(response, remoteip) {
         const url = `https://${this._host}/recaptcha/api/siteverify?secret=${this._secret}&response=${response}&remoteip=${remoteip}`
-        return await request.get(url)
-            .catch(e => {
-                throw new Error('google-recaptcha-api: network error, please try again later.')
-            })
+        try {
+            return await request.get(url)
+        } catch(e) {
+            throw new Error('google-recaptcha-api: network error, please try again later.')
+        }
     }
 }
 module.exports = GoogleReCaptcha
