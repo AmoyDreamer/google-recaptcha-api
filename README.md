@@ -26,15 +26,14 @@ try {
 ```
 You can get server_captcha_key from [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/).
 
-
 ## Method
 new GoogleReCaptcha(secret, host) => Create an instance of google-recaptcha-api.
-- secret => The shared key between your site and reCAPTCHA.(required)
-- host => API hostname, default value is **www.google.com**. Specially, some areas require network proxying, such as China, just set **www.recaptcha.net**.(optional)
+- secret => required, the shared key between your site and reCAPTCHA.
+- host => optional, API hostname, default value is www.google.com. Specially, some areas require network proxying, such as China, just set www.recaptcha.net.
 
 instance.validate(response, remoteip) => Using the following API to ensure the response token is valid. Return value is a promise, you can use [async-await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) synchronizing code.
-- response => The user response token provided by the reCAPTCHA client-side integration on your site.(required)
-- remoteip => The user's IP address.(required)
+- response => required, the user response token provided by the reCAPTCHA client-side integration on your site.
+- remoteip => required, the user's IP address.
 
 ## License
 google-recaptcha-api is [MIT licensed](https://github.com/AmoyDreamer/google-recaptcha-api/blob/master/LICENSE).
